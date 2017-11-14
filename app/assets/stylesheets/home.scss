@@ -1,0 +1,117 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: #c6c7cc;
+}
+// ===================
+  // section
+  // ===================
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: minmax(120px, auto);
+  }
+  .one {
+    grid-column: 4 / 6;
+    grid-row: 1;
+    background-color: white;
+  }
+  .two {
+    grid-column: 4 / 6;
+    grid-row: 2;
+    background-color: white;
+  }
+
+  .three {
+    grid-column: 4 / 6;
+    grid-row: 3;
+    background-color: white;
+  }
+  .four {
+    grid-column: 4 / 6;
+    grid-row: 4;
+    background-color: white;
+  }
+
+  .five {
+    grid-column: 4 / 6;
+    grid-row: 5;
+    background-color: white;
+  }
+
+  .interligne-descr {
+    height: 27px;
+}
+
+/*
+########################
+      Header/Footer
+########################
+*/
+.mini-logo {
+
+}
+
+.grand-logo {
+
+}
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+/*
+########################
+      Formulaire
+########################
+form {
+// margin-bottom: 22px;
+}
+
+input {
+// font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+*/
+
+form {
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+fieldset {
+  // border: 0;
+  // margin: 0;
+  // padding: 0;
+}
+input {
+  border-radius: 5px;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+.register-group label {
+  color: #648880;
+  cursor: pointer;
+  font-weight: 400;
+}
+.register-group input,
+.register-group select,
+.register-group textarea {
+  border: 1px solid #c6c9cc;
+  border-radius: 5px;
+  color: #888;
+  display: block;
+  margin: 5px 0 27px 0;
+  padding: 5px 8px;
+}
+.register-group input,
+.register-group textarea {
+  width: 100%;
+}
+.register-group select {
+  height: 34px;
+  width: 60px;
+}
+.register-group textarea {
+  height: 78px;
+}
