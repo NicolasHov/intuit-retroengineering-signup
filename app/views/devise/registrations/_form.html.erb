@@ -1,7 +1,7 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <fieldset class="register-group">
+  <div class="register-group">
 
     <div class="field">
       <%= f.label :email %><br />
@@ -30,7 +30,7 @@
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
-</fieldset>
+</div>
 <% end %>
 
 <%= render "devise/shared/links" %>

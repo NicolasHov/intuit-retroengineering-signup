@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  background-color: #c6c7cc;
+  background-color: #eceef1;
 }
 html, h1, h2, h3, h4 {
   font-family: 'AvenirNext',Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -11,25 +11,36 @@ html, h1, h2, h3, h4 {
   // ===================
   //      section
   // ===================
+
+  .one, .two, .three, .four, .five {
+    border-left: solid 1px #c7c7c7;
+    border-right: solid 1px #c7c7c7;
+  }
+
   .wrapper {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-auto-rows: minmax(120px, auto);
-  }
+
   .one {
     grid-column: 4 / 6;
     grid-row: 0.5;
     background-color: white;
     display: flex;
-    justify-content: space-around;
-  }
+
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+    border-top: solid 1px #c7c7c7;
+
+
+    }
 
   .oneA {  border-right: solid 1px; }
   .oneB {  border-right: solid 1px; }
   .oneC {  border-right: solid 1px; }
 
   .two {
-    border: solid 1px;
     grid-column: 4 / 6;
     grid-row:auto;
     background-color: white;
@@ -41,7 +52,6 @@ html, h1, h2, h3, h4 {
     background-color: white;
   }
   .four {
-    border: solid 1px;
     grid-column: 4 / 6;
     grid-row: auto;
     background-color: white;
@@ -51,21 +61,22 @@ html, h1, h2, h3, h4 {
     grid-column: 4 / 6;
     grid-row: auto;
     background-color: white;
+
+    border-bottom: solid 1px #c7c7c7;
+
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
 
   .interligne-descr {
     height: 27px;
 }
-
+}
 /*
 ########################
       Header/Footer
 ########################
 */
-.mini-logo {
-
-}
-
 .center-title{
     margin-top: 70px;
     margin-right:auto;
@@ -127,16 +138,21 @@ input {
   font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
 }
+
+.register-group {
+  margin: 10px 10px 10px 10px;
+}
 .register-group label {
   color: #648880;
   cursor: pointer;
   font-weight: 400;
+
 }
 .register-group input,
 .register-group select,
 .register-group textarea {
   border: 1px solid #c6c9cc;
-  border-radius: 5px;
+  border-radius: 2px;
   color: #888;
   display: block;
   margin: 5px 0 27px 0;
