@@ -5,8 +5,11 @@
 body {
   background-color: #c6c7cc;
 }
-// ===================
-  // section
+html, h1, h2, h3, h4 {
+  font-family: 'AvenirNext',Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+  // ===================
+  //      section
   // ===================
   .wrapper {
     display: grid;
@@ -15,29 +18,38 @@ body {
   }
   .one {
     grid-column: 4 / 6;
-    grid-row: 1;
+    grid-row: 0.5;
     background-color: white;
+    display: flex;
+    justify-content: space-around;
   }
+
+  .oneA {  border-right: solid 1px; }
+  .oneB {  border-right: solid 1px; }
+  .oneC {  border-right: solid 1px; }
+
   .two {
+    border: solid 1px;
     grid-column: 4 / 6;
-    grid-row: 2;
+    grid-row:auto;
     background-color: white;
   }
 
   .three {
     grid-column: 4 / 6;
-    grid-row: 3;
+    grid-row: auto;
     background-color: white;
   }
   .four {
+    border: solid 1px;
     grid-column: 4 / 6;
-    grid-row: 4;
+    grid-row: auto;
     background-color: white;
   }
 
   .five {
     grid-column: 4 / 6;
-    grid-row: 5;
+    grid-row: auto;
     background-color: white;
   }
 
@@ -54,9 +66,35 @@ body {
 
 }
 
-.grand-logo {
-
+.center-title{
+    margin-top: 70px;
+    margin-right:auto;
+    margin-left:auto;
+    background-image:url(https://accounts.intuit.com/images/v2/ecosystem_logos_new@2x.png);
+    background-size: 460px 83px;
+    width: 118px;
+    height: 35px;
 }
+
+.center-title-mini{
+    margin-top: 10px;
+    margin-right:auto;
+    margin-left:auto;
+    background-image:url(https://accounts.intuit.com/images/v2/ecosystem_logos_new@2x.png);
+    background-size: 230px 41px;
+    width: 59px;
+    height: 17px;
+}
+
+.navbar {
+  margin-bottom: 5vh;
+  height: 20%;
+}
+button {
+  float:right;
+  // TODO
+}
+
 *,
 *:before,
 *:after {
