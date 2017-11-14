@@ -1,0 +1,202 @@
+/* line 5, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+body {
+  background-color: #eceef1;
+}
+
+/* line 8, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+html, h1, h2, h3, h4 {
+  font-family: 'AvenirNext',Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* line 15, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+.one, .two, .three, .four, .five {
+  border-left: solid 1px #c7c7c7;
+  border-right: solid 1px #c7c7c7;
+}
+
+/* line 20, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: minmax(120px, auto);
+}
+/* line 25, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+.wrapper .one {
+  grid-column: 4 / 6;
+  grid-row: 0.5;
+  background-color: white;
+  display: flex;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top: solid 1px #c7c7c7;
+}
+/* line 39, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+.wrapper .oneA {
+  border-right: solid 1px;
+}
+/* line 40, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+.wrapper .oneB {
+  border-right: solid 1px;
+}
+/* line 41, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+.wrapper .oneC {
+  border-right: solid 1px;
+}
+/* line 43, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+.wrapper .two {
+  grid-column: 4 / 6;
+  grid-row: auto;
+  background-color: white;
+}
+/* line 49, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+.wrapper .three {
+  grid-column: 4 / 6;
+  grid-row: auto;
+  background-color: white;
+}
+/* line 54, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+.wrapper .four {
+  grid-column: 4 / 6;
+  grid-row: auto;
+  background-color: white;
+}
+/* line 60, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+.wrapper .five {
+  grid-column: 4 / 6;
+  grid-row: auto;
+  background-color: white;
+  border-bottom: solid 1px #c7c7c7;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+/* line 71, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+.wrapper .interligne-descr {
+  height: 27px;
+}
+
+/*
+########################
+      Header/Footer
+########################
+*/
+/* line 80, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+.center-title {
+  margin-top: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(https://accounts.intuit.com/images/v2/ecosystem_logos_new@2x.png);
+  background-size: 460px 83px;
+  width: 118px;
+  height: 35px;
+}
+
+/* line 90, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+.center-title-mini {
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(https://accounts.intuit.com/images/v2/ecosystem_logos_new@2x.png);
+  background-size: 230px 41px;
+  width: 59px;
+  height: 17px;
+}
+
+/* line 100, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+.navbar {
+  margin-bottom: 5vh;
+  height: 20%;
+}
+
+/* line 104, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+button {
+  float: right;
+}
+
+/* line 109, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*
+########################
+      Formulaire
+########################
+form {
+// margin-bottom: 22px;
+}
+
+input {
+// font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+*/
+/* line 127, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+form {
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* line 136, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+input {
+  border-radius: 5px;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+/* line 142, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+.register-group {
+  margin: 10px 10px 10px 10px;
+}
+
+/* line 145, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+.register-group label {
+  color: #648880;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+/* line 151, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+.register-group input,
+.register-group select,
+.register-group textarea {
+  border: 1px solid #c6c9cc;
+  border-radius: 2px;
+  color: #888;
+  display: block;
+  margin: 5px 0 27px 0;
+  padding: 5px 8px;
+}
+
+/* line 161, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+.register-group input,
+.register-group textarea {
+  width: 100%;
+}
+
+/* line 165, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+.register-group select {
+  height: 34px;
+  width: 60px;
+}
+
+/* line 169, /home/nicolas/Workspace/formulaire-front-rails/app/assets/stylesheets/home.scss */
+.register-group textarea {
+  height: 78px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
